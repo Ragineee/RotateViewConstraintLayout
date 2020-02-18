@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bggg"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/sun_image"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/sundrawable"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/earth_image"
+        android:layout_width="90dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="32dp"
+        android:src="@drawable/earth"
+        app:layout_constraintCircleAngle="45"
+        app:layout_constraintCircleRadius="90dp"
+        app:layout_constraintCircle="@id/sun_image"
+        app:layout_constraintBottom_toTopOf="@+id/sun_image"
+        app:layout_constraintEnd_toEndOf="@+id/sun_image"
+        app:layout_constraintStart_toStartOf="@+id/sun_image" />
+
+
+    <ImageView
+        android:id="@+id/mars_image"
+        android:layout_width="60dp"
+        android:layout_height="90dp"
+        android:layout_marginBottom="32dp"
+        android:src="@drawable/mars"
+        app:layout_constraintCircleAngle="110"
+        app:layout_constraintCircleRadius="130dp"
+        app:layout_constraintCircle="@id/sun_image"
+        app:layout_constraintBottom_toTopOf="@+id/sun_image"
+        app:layout_constraintEnd_toEndOf="@+id/sun_image"
+        app:layout_constraintStart_toStartOf="@+id/sun_image" />
+
+
+    <ImageView
+        android:id="@+id/saturn_image"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginBottom="32dp"
+        android:src="@drawable/saturn"
+        app:layout_constraintCircleAngle="235"
+        app:layout_constraintCircleRadius="180dp"
+        app:layout_constraintCircle="@id/sun_image"
+        app:layout_constraintBottom_toTopOf="@+id/sun_image"
+        app:layout_constraintEnd_toEndOf="@+id/sun_image"
+        app:layout_constraintStart_toStartOf="@+id/sun_image" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
